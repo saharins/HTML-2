@@ -1,0 +1,128 @@
+body{
+    margin:40px 90px ;
+}
+
+/* intro section........................................ */
+
+.intro_text_section h1{
+    color: gray;
+    font-size: xx-large;
+}
+.intro_text_section ul{
+    color: gray;
+}
+.intro_section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 0px;
+    padding: 20px;
+    background-color: rgb(150, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2%;
+    transition-duration: 2s;
+}
+/* .intro_section :hover{
+    background-color: plum
+} */
+.intro_img_section{
+    width: 240;
+    height: 350;
+
+}
+
+/* about section...................................................... */
+
+.intro_about_section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0px;
+    padding: 10px;
+    background-color: rgb(241, 191, 203);
+    box-shadow: rgb(67, 146, 231) 0px 20px 30px -10px;
+    border-radius: 2%;
+    transition-duration: 2s;
+    
+}
+.about_img_section{
+    width: 240;
+    height: 350;
+}
+.about_text_section{
+    width: 250px;
+}
+
+/* card section.................................................... */
+
+.whatido_card_section{
+    margin: 100px 10;
+    padding: 50px 30;
+    background-color: rgb(205, 238, 225);
+    transition-duration: 2s;
+}
+.Div_card_section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 2px;
+    padding: 20 12;
+}
+.Div_card_section div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 5%;
+    /* padding: 10px; */
+    margin: 30px;
+    width: 400;
+    height: 200;
+    transition-duration: 2s;
+}
+
+/* hover.................................................................. */
+
+.intro_section:hover{
+    background-color: rgb(159, 129, 186);
+}
+.whatido_card_section:hover{
+    background-color: rgb(188, 149, 184);
+}
+.intro_about_section:hover{
+    background-color: rgb(172, 112, 70);
+}
+.Div_card_section div:hover{
+    background-color: rgb(49, 145, 224);
+}
+
+/* inspect.................................................................. */
+ @media screen and (max-width: 620px){
+    .intro_section{
+        display: flex;
+        flex-direction: column;
+        background-color: palegoldenrod;
+        padding: 8px;
+    }
+    .intro_about_section{
+        display: flex;
+        flex-direction: column;
+        background-color: powderblue;
+    }
+    .whatido_card_section{
+        display: flex;
+        flex-direction: column;
+        background-color: burlywood;
+    }
+    body{
+        margin: 20px 10px;
+    }
+    .about_text_section{
+        width: 200px;
+        padding: 8px;
+    }
+    .Div_card_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
